@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>
+			RejectMail.com
+		</title>		
+
+		<%= javascript_include_tag :defaults %>
+		<%= stylesheet_link_tag 'rejectmail' %>
+		<!--[if IE]>
+			<link href="/stylesheets/3col-ie.css" rel="stylesheet" type="text/css" />
+		<![endif]-->		
+
+	</head>
+
+<body>
+	<div id="minHeight"></div>
+	<div id="outer">
+		<div id="clearheader"></div>
+		<div id="clearnavbar"></div>
+
+	<div id="left">
+		<p align="center">
+			left
+		</p>
+	</div>
+	<div id="centrecontent">
+		<%= yield %>
+	</div>
+	<div id="right">
+		<div id="adbox">
+			
+	  	</div>
+	</div>
+	<div id="clearfooter"></div>
+	<!-- to clear footer -->
+</div>
+<!-- end outer div -->
+		
+	<div id="footer">
+		<a href="http://www.rejectmail.com">RejectMail.com<a> &copy; 2006&nbsp;
+		-&nbsp;<a href="mailto:admin@rejectmail.com?subject=REJECTMAIL Comment">Problems or Comments?</a>
+	</div>	
+	<div id="header">
+		<a href="http://www.rejectmail.com/">RejectMail</a>
+	</div>
+	<div id="navbar">
+		<%= link_to("Home", :controller => "public", :action => "index") %>
+	</div>	
+</body>
+</html>

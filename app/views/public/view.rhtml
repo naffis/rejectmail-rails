@@ -1,0 +1,13 @@
+Email for <%= @email_name %>@RejectMail.com
+<br>
+<table>
+	<tr>
+		<td>from</td>
+		<td>subject</td>
+		<td>date</ted>
+	</tr>	
+	<%= render :partial => "email", :collection => @emails %>	
+</table>
+<br>
+<center><%= pagination_links(@email_pages) %></center>
+
